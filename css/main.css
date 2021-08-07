@@ -1,0 +1,27 @@
+h1{
+    text-align:center;
+    background-color: rgb(29, 41, 78);
+    color:white;
+    
+}
+body{
+    background-image: url("../background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+
+}
+p{
+    color: rgb(4, 41, 58);
+    text-align:center;
+    font-size: 30px;
+    align-items: center;
+
+}
+
+input[type="submit" i]{
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px 30px;
+
+}
