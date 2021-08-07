@@ -4,7 +4,8 @@ We've 6 arm components which represent the joints of the arm. Our goal is to des
 
 first write a HTML code to define a structure of a web page, then style the web pages by using CSS.
 
-This is my webpage! 
+This is my webpage!
+
    ![control](https://user-images.githubusercontent.com/46565265/128602610-213eaa63-7bcc-4add-9855-f7e8121443c2.png)
    
 Database
