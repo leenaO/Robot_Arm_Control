@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <div>
+        <head>
+            <meta charset="UTF-8"/>
+            <title>Arm Control</title>
+            <link rel="stylesheet" href="css/main.css">
+            <meta name="description" content="this is our robot contol panel"/>
+        </head>
+        
+    
+        <body>
+            <h1>Arm Contol</h1>
+            
+                <div>
+                    <p>
+                        <label>motor 1</label>
+                        <input type="range" id="motor1" value="0" min="0" max="90"    
+                            oninput="document.getElementById('m1').innerHTML = this.value" style=" width:60%;"/>
+                        <label id="m1"></label>
+                    </p>
+                    <p>
+                        <label>motor 2</label>
+                        <input type="range" id="motor2" value="0" min="0" max="90" 
+                            oninput="document.getElementById('m2').innerHTML = this.value" style=" width:60%;"/>
+                        <label id="m2"></label>
+                    </p>
+                    <p>
+                        <label>motor 3</label>
+                        <input type="range" id="motor3" value="0" min="0" max="90" 
+                            oninput="document.getElementById('m3').innerHTML = this.value" style=" width:60%;"/>
+                        <label id="m3"></label>
+                    </p>
+                    <p>
+                        <label>motor 4</label>
+                        <input type="range" id="motor4" value="0" min="0" max="90" 
+                            oninput="document.getElementById('m4').innerHTML = this.value" style=" width:60%;"/>
+                        <label id="m4"></label>
+                    </p>
+                    <p>
+                        <label>motor 5</label>
+                        <input type="range" id="motor5" value="0" min="0" max="90" 
+                            oninput="document.getElementById('m5').innerHTML = this.value" style=" width:60%;"/>
+                        <label id="m5"></label>
+                    </p>
+                    <p>
+                        <label>motor 6</label>
+                        <input type="range" id="motor6" value="0" min="0" max="90" 
+                            oninput="document.getElementById('m6').innerHTML = this.value" style=" width:60%;"/>
+                        <label id="m6"></label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Save">
+                    <input type="submit" value="Run">
+                    </p>
+                           
+        
+                </div>
+
+            </from>
+            
+           
+        </body>
+    </div>
+    
+
+</html>
