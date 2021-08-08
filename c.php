@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -11,19 +11,19 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if (mysqli_connect_error()) {
   die('Connect Error ('.mysqli_connect_errno().')'.mysqli_connect_error());
 }
-if(isset($_POST['save'])){
-$motor1= $_POST['m1'];
-$motor2= $_POST['m2'];
-$motor3= $_POST['m3'];
-$motor4= $_POST['m4'];
-$motor5= $_POST['m5'];
-$motor6= $_POST['m6'];
-}
+
+$motor1= $_POST["data"];
+$motor2= $_POST["data2"];
+$motor3= $_POST["data3"];
+$motor4= $_POST["data4"];
+$motor5= $_POST["data5"];
+$motor6= $_POST["data6"];
+
 $sql = "INSERT INTO motors (motor1, motor2, motor3, motor4, motor5, motor6)
 VALUES ('$motor1', '$motor2', '$motor3', '$motor4', '$motor5', '$motor6')";
 
 if ($conn->query($sql)) {
-  echo "New arm position has been successfully created";
+  echo "Robot arm position has been saved successfully";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
